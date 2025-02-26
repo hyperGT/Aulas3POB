@@ -4,7 +4,6 @@ import java.util.Scanner;
 
 public class Soma {
     
-    Scanner sc = new Scanner(System.in);
     
     public int somaNum(int x, int y) {
         return x + y;
@@ -12,12 +11,12 @@ public class Soma {
     
     public static void main(String[] args) throws Exception {
         Soma soma = new Soma();
+        Scanner sc = new Scanner(System.in);
         System.out.println("Digite o primeiro número: ");
-        int x = soma.sc.nextInt();
+        int x = sc.nextInt();
         System.out.println("Digite o segundo número: ");
-        int y = soma.sc.nextInt();
+        int y = sc.nextInt();
         System.out.println("A soma dos números é: " + soma.somaNum(x, y));
-        soma.sc.close();
+        sc.close();
     }
-
 }
