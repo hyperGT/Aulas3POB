@@ -1,6 +1,12 @@
-## Getting Started
+## Conteúdo
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Essa lista de exercícios aborda temas como criação de classes com seus respectivos métodos(comportamentos) e variáveis(atributos). 
+
+- Classes
+- Métodos
+- Operações Aritméticas em Java
+- Estruturas de repetição e condicionais(for, while, if e else)
+
 
 ## Folder Structure
 
