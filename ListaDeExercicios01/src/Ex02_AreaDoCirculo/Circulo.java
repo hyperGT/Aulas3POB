@@ -15,7 +15,7 @@ public class Circulo {
         Scanner sc = new Scanner(System.in);
         DecimalFormat df = new DecimalFormat("#.00");
 
-        System.out.println("Digite o raio do círculo: ");
+        System.out.print("Digite o raio do círculo: ");
         double raio = sc.nextDouble();
 
         System.out.println("Area do círculo: " + df.format(circulo.calcularArea(raio)));
