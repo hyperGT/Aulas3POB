@@ -8,8 +8,10 @@ public class NotasParaConceito {
         
         System.out.print("Digite a nota: ");
         int nota = sc.nextInt();
-        
-        if(nota >= 9) {
+
+        if(nota < 0 || nota > 10) {
+            System.out.println("Nota inválida.");
+        } else if(nota >= 9) {
             System.out.println("Conceito A");
         } else if(nota >= 7) {
             System.out.println("Conceito B");
