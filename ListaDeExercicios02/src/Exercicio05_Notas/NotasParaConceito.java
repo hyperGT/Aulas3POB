@@ -10,7 +10,7 @@ public class NotasParaConceito {
         int nota = sc.nextInt();
 
         if(nota < 0 || nota > 10) {
-            System.out.println("Nota inválida.");
+            System.out.println("Nota inválida.");            
         } else if(nota >= 9) {
             System.out.println("Conceito A");
         } else if(nota >= 7) {
