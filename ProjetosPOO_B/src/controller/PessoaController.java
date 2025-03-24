@@ -28,9 +28,7 @@ public class PessoaController {
 
         pessoa.listarPessoa();
 
-        double imc = pessoa.calculaIMC();        
-
-        pessoa.classificaIMC(imc);
+        pessoa.classificaIMC();        
 
         sc.close();
     }

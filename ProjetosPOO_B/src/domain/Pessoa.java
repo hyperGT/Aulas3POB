@@ -1,27 +1,45 @@
 package domain;
 
 public class Pessoa {
+
+    // Atributos (Attributes)
     private String nome;
     private int idade;
     private double altura;
     private double peso;
     private char sexo;
 
+    // Construtores (Constructors)
     public Pessoa(String nome, int idade, double altura, double peso, char sexo) {
+        if (idade < 0 || idade > 150) {
+            throw new IllegalArgumentException("Idade não pode ser negativa e maior que 150 anos");
+        }
+        if (altura < 0 || altura > 3) {
+            throw new IllegalArgumentException("Altura não pode ser negativa e maior que 3 m");
+        }
+        if (peso < 0 || peso > 500) {
+            throw new IllegalArgumentException("Peso não pode ser negativo e maior que 500 kg");
+        }
+        if (sexo != 'M' && sexo != 'F') {
+            throw new IllegalArgumentException("Sexo deve ser M ou F");
+        }
+
         this.nome = nome;
         this.idade = idade;
         this.altura = altura;
         this.peso = peso;
         this.sexo = sexo;
-    }
+    }    
+    
+    // Métodos (Methods)
+    public void classificaIMC(){
 
-    public void classificaIMC(double imc){
-
+        double imc = calculaIMC();
         System.out.printf("IMC: %.2f\n", imc);
 
         if(imc < 18.5){
             System.out.println("Abaixo do peso adequado");
-        }else if(imc < 25){            
+        }else if(imc < 25){
             System.out.println("Peso Adequado");
         }else if(imc < 30){
             System.out.println("Sobrepeso");
@@ -35,7 +53,7 @@ public class Pessoa {
     }
 
     public double calculaIMC(){
-        return peso/(altura*altura);        
+        return (peso/(altura*altura));        
     }
 
     public void listarPessoa() {
@@ -50,6 +68,7 @@ public class Pessoa {
         }
     }
 
+    // Getters e Setters 
     public String getNome() {
         return nome;
     }
