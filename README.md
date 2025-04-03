@@ -1,5 +1,5 @@
 # Java Orientado a objetos Básico
-## Contemplando os conteúdos abaixo:
+## Lista de conteúdos:
   - Desenvolvimento de Software com Java
   - Tipos de Dados
   - Classes de bibliotecas e Métodos Java
