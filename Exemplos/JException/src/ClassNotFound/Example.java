@@ -11,7 +11,7 @@ public class Example {
     
     public static void main(String[] args) {
         try {
-            // Attempt to load a class that does not exist
+            // Attempt to load a class that does not exist // Tenta carregar uma classe que não existe
             Class.forName("NonExistentClass");
         } catch (ClassNotFoundException e) {
             System.out.println("Caught a ClassNotFoundException: " + e.getMessage());
