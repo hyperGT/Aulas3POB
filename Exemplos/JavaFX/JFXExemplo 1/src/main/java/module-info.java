@@ -4,5 +4,5 @@ module gabriel.learnspring.jfxcampus {
 
 
     opens gabriel.learnspring.jfxcampus to javafx.fxml;
-    exports gabriel.learnspring.jfxcampus;
+    exports gabriel.jfxcampus;
 }

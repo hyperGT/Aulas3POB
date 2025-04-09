@@ -1,4 +1,4 @@
-package gabriel.learnspring.jfxcampus;
+package gabriel.jfxcampus;
 
 import javafx.application.Application;
 import javafx.event.ActionEvent;
