@@ -15,8 +15,21 @@ public class Funcionario {
     }
 
     // Methods
-    public double calculaSalarioFinal(double salarioBase, double bonus){
-        return salarioBase + (salarioBase * (bonus / 100));
+    public double calculaSalarioFinal(char categoria){
+        double sFinal = salarioBase;
+        switch (categoria) {
+            case 'A':
+                sFinal *= 1.20;
+                break;
+            case 'B':
+                sFinal *= 1.10;
+                break;
+
+            default:                
+                sFinal = salarioBase;
+                break;
+        }
+        return sFinal;
     }
 
     public String getNome() {

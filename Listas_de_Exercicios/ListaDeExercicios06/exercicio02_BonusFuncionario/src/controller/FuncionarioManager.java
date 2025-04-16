@@ -18,24 +18,11 @@ public class FuncionarioManager {
         double salarioBase = sc.nextDouble();
 
         // criando um novo funcionário
-        Funcionario newFc = new Funcionario(nome, salarioBase, categoria);
-        double salarioFinal;
+        Funcionario funcionario = new Funcionario(nome, salarioBase, categoria);                        
 
-        switch (categoria) {
-            case 'A':
-                salarioFinal = newFc.calculaSalarioFinal(salarioBase, 20);
-                System.out.println("Salario final: " + salarioFinal);
-                break;
-            case 'B':
-                salarioFinal = newFc.calculaSalarioFinal(salarioBase, 10);
-                System.out.println("Salario final: " + salarioFinal);
-                break;
-
-            default:
-                salarioFinal = salarioBase;
-                System.out.println("Salario final: " + salarioFinal);
-                break;
-        }
+        System.out.printf("Salário final: %.2f", funcionario.calculaSalarioFinal(categoria));
+        
+        funcionario.toString();
         sc.close();
     }
 }

@@ -1,5 +1,6 @@
 package domain;
 
+import util.*;
 public class Elevador {
     
     private int andarAtual;
@@ -15,10 +16,39 @@ public class Elevador {
         if(andarAtual < totalAndares){
             andarAtual++;
         }else{
-            throw new IllegalArgumentException("Não pode mais subir");
+            throw new InvalidFloorException("Já chegou no último andar.");
         }
     }
+
+    public void subir(int qntAndares){
+        
+        try{
+            
+            if(qntAndares < totalAndares){
+                andarAtual += qntAndares;   // atualiza o andar atual
+                return;            
+            }
+
+            if(qntAndares == -1){
+                andarAtual = totalAndares;  // vai direto pro último andar
+                return;
+            }
+
+        }catch(InvalidFloorException e){
+            
+            e.getMyErrorMessage();
+        }        
+    }
+
     public void descer(){
+        if(andarAtual > 1){
+            andarAtual--;
+        }else{
+            throw new IllegalArgumentException("Não pode mais descer");
+        }
+    }
+
+    public void descer(int qntAndares){
         if(andarAtual > 1){
             andarAtual--;
         }else{
