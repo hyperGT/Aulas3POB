@@ -18,7 +18,6 @@ Este repositório contém os exercícios, projetos e anotações das aulas de Pr
 - Git e GitHub para versionamento e colaboração
 
 # 📁 Estrutura do Repositório
-
 - Exemplos: Contém exemplos de uso de códigos 
-- Listas_Exercicios: Contem todas as listas de exercicios disponibilizadas durante as aulas
+- Listas_Exercicios: Contém todas as listas de exercicios disponibilizadas durante as aulas
 - ProjetosPOO: Exemplos de pequenos projetos feitos para testar e fixar o conhecimento
