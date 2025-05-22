@@ -2,21 +2,26 @@ package model;
 
 public class Aluno {
 
+    private Integer id;
     private String matricula;
     private String nome;
     private Turno turno;
     private Curso curso;
 
-    // construtor
-    public Aluno(String matricula, String nome, Turno turno, Curso curso) {
-        if(nome == null || nome.trim().isEmpty()) {
-            throw new IllegalArgumentException("Nome do produto não pode ser vazio ou nulo");
-        }
-
+    public Aluno(Integer id, String matricula, String nome, Turno turno, Curso curso) {
+        this.id = id;
         this.matricula = matricula;
         this.nome = nome;
         this.turno = turno;
         this.curso = curso;
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
     }
 
     public Turno getTurno() {
@@ -50,7 +55,8 @@ public class Aluno {
     @Override
     public String toString() {
         return "Aluno{" +
-                "matricula='" + matricula + '\'' +
+                "id=" + id +
+                ", matricula='" + matricula + '\'' +
                 ", nome='" + nome + '\'' +
                 ", turno=" + turno +
                 ", curso=" + curso +
@@ -60,7 +66,7 @@ public class Aluno {
     public String toFileString(){
         return matricula + ";" + nome + ";" + getTurno().name() + ";" + getCurso().getId();
     }
-/*
+
     public static Aluno fromFileString(String line){
         String[] data = line.split(";");
         if(data.length != 4){
@@ -71,9 +77,10 @@ public class Aluno {
             String matricula = data[0];
             String nome = data[1];
             Turno turno = Turno.valueOf(data[2].toUpperCase());
+           // Curso curso = Instituicao.getCursoById(data[3]);
             // retorna novo aluno
+        }catch (IllegalArgumentException e){
+            System.out.println("Não foi possível acessar os dados corretamente");
         }
     }
-
-*/
 }

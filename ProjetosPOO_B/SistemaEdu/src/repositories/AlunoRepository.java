@@ -1,4 +1,4 @@
-package model;
+package repositories;
 
 public class AlunoRepository {
 
