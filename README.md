@@ -11,13 +11,15 @@ Este repositório contém os exercícios, projetos e anotações das aulas de Pr
 - ✅ Interfaces e Abstração
 - ✅ Sobrecarga de métodos e construtores
 - ✅ Associações entre classes
+- ✅ JavaFx
+- ✅ Clean Code
 
 # 🛠️ Tecnologias Utilizadas
 - Linguagem: Java
-- IDE: VS Code
+- IDE: VS Code e IntelliJ
 - Git e GitHub para versionamento e colaboração
 
 # 📁 Estrutura do Repositório
 - Exemplos: Contém exemplos de uso de códigos 
 - Listas_Exercicios: Contém a minha solução dos exercícios apresentados nas listas de exercicios disponibilizadas pelo professor do curso
-- ProjetosPOO: Exemplos de pequenos projetos feitos para testar e fixar o conhecimento
+- ProjetosPOO: Pequenos projetos práticos feitos para testar e fixar o conhecimento
